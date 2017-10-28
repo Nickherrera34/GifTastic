@@ -1,0 +1,47 @@
+body{
+	background-color: #121212;
+	padding:40px;
+}
+
+.containerBody{
+	background-color: #121212;
+}
+
+.containerHead, .containerContent{
+	padding: 10px;
+	background-color: #3e3e3e;
+	color:#fff;
+	margin-bottom: 25px;
+}
+
+.containerHead{
+	min-height: 100px;
+}
+
+.containerContent{
+	min-height: 900px;
+}
+
+.headerLogoButton{
+	background-color: #121212;
+	display: inline-block;
+	min-height: 80px;
+	padding: 25px;
+	border-radius: 25px;
+	width: 400px;
+	text-align: center;
+	font-size: 35px;
+	font-family: monospace;
+}
+
+button{
+	width: 75%;
+}
+
+#searchButton {
+	width:100px;
+}
+
+#searchQuery{
+	width: 200px;
+}
