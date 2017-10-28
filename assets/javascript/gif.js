@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	// console.log("ready");
 //initial button array
-var addReactions = ["Happy","Sad","Angry","Confused","Laughing","Bored","Sleepy","Excited","Creepy","Stunned"];
+var addReactions = ["Happy","Sad","Angry","Confused","Laughing","Bored","Sleepy","Excited","Creepy","Stunned", "Okay", "Shrug", "Spooky", "Speachless", "OMG"];
 
 function renderButtons(){
 		$("#gifButtons").empty();
