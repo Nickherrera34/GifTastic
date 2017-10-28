@@ -8,6 +8,7 @@ $(document).ready(function(){
 
   	for (var i = 0; i < addReactions.length; i++){
   		var a = $("<button>");
+      a.addClass("buttons-data");
   		a.attr("data-reaction", addReactions[i]);
   		a.text(addReactions[i]);
       a.on("click", gifButtonClick);
@@ -62,5 +63,5 @@ $(document).ready(function(){
       });
   };    
 
-  $("button").on("click", gifButtonClick);
+  $(".button-data").on("click", gifButtonClick);
 });
