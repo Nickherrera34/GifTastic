@@ -3,14 +3,11 @@ $(document).ready(function(){
 //initial button array
 var addReactions = ["Happy","Sad","Angry","Confused","Laughing","Bored","Sleepy","Excited","Creepy","Stunned"];
 
-
-
 function renderButtons(){
 		$("#gifButtons").empty();
 
 	for (i = 0; i < addReactions.length; i++){
 		var a = $("<button>");
-		a.addClass("reaction");
 		a.attr("data-reaction", addReactions[i]);
 		a.text(addReactions[i]);
 		$("#gifButtons").prepend(a);
@@ -25,15 +22,15 @@ function renderButtons(){
         var newReaction = $("#searchQuery").val().trim();        
         addReactions.push(newReaction);               
         renderButtons();
-      });
+  });
 
       
 
-
-$("#gifButtons").on("click", function() {
+$("button").on("click", function(event) {
       
       var reaction = $(this).attr("data-reaction");
-      console.log(reaction);
+      // console.log(reaction);
+      console.log(this);
 
     //need to change out variable once I can get it to pull correctly
       var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + reaction + "&api_key=Al3YVaFhJ3uHwjQcLmF5sg8QaCk6wVl1&limit=10";
@@ -71,12 +68,4 @@ $("#gifButtons").on("click", function() {
           }
         });
     });
-
-
- 
-
-
-
-
-
 })
