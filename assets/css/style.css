@@ -45,3 +45,7 @@ button{
 #searchQuery{
 	width: 200px;
 }
+
+.item{
+	display: inline-block;
+}
